@@ -1,9 +1,5 @@
 # KDM5A/KDM5B mechanism paper figures
 #
-# Cleaned from:
-#   analysis_paper/04_KDM5A_KDM5B_mechanism/01_Mass_spec_volcano_plot/RB_IP_Mass_Spec_Spectronaut_Plots_and_Prot_list_AW.Rmd
-#   analysis_paper/04_KDM5A_KDM5B_mechanism/02_Mass_spec_individual_protein_abundance/Protein_relative_abundance.Rmd
-#
 # This script starts from saved limma/Spectronaut outputs. It does not rerun
 # raw mass-spectrometry processing or limma.
 # Outputs are mass-spec volcano and selected-protein abundance panels.

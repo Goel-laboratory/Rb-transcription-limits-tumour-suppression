@@ -1,10 +1,5 @@
 # RB non-promoter function paper figures
 #
-# Cleaned from:
-#   analysis_paper/02_RB_nonprom_function/01_RBup_ChiPEnrich_ORA/02_ChIPEnrich_ORA_nonpromoter.Rmd
-#   analysis_paper/02_RB_nonprom_function/02_RBup_geneexprsup_hypergeometric/01_RBup_geneexprsup_hypergeometric.Rmd
-#   analysis_paper/02_RB_nonprom_function/04_RBup_HiChIP_H3K27ac_hypergeometric/01_RBup_HiChIP_H3K27ac_hypergeometric.Rmd
-#
 # This script consumes saved ChIPEnrich and hypergeometric/ORA result objects
 # and recreates the final dot-plot style summaries. It does not rerun
 # ChIPEnrich, peak overlaps, or HiChIP processing.

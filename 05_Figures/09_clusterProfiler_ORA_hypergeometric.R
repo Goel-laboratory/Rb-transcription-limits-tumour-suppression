@@ -46,8 +46,6 @@ run_hallmark_ora <- function(genes, universe = NULL) {
 }
 
 # RB-up non-promoter peaks linked to RNA-seq up/down genes.
-# Original source:
-# analysis_paper/02_RB_nonprom_function/02_RBup_geneexprsup_hypergeometric
 run_rb_peak_expression_ora <- function(combined_df, exprs_df) {
   genes_up <- combined_df %>%
     filter(
@@ -82,8 +80,6 @@ run_rb_peak_expression_ora <- function(combined_df, exprs_df) {
 }
 
 # Same ORA structure for multiple cell line/treatment lists.
-# Original source:
-# analysis/CutRun/241217_MCF7_ZR751_Parent_sgRB_palbo_RB_CnR/R_analysis/5.RBup_geneexprs_hypergeo
 run_rb_peak_expression_ora_list <- function(genes_up, genes_down, exprs_df, treatment = "PB") {
   up_tbl <- imap(genes_up, function(genes_i, nm) {
     as_ora_tbl(
@@ -108,8 +104,6 @@ run_rb_peak_expression_ora_list <- function(genes_up, genes_down, exprs_df, trea
 
 # HiChIP loop-connected gene sets. These analyses used the default universe in
 # clusterProfiler::enricher(), matching the original notebooks.
-# Original source:
-# analysis_paper/02_RB_nonprom_function/04_RBup_HiChIP_H3K27ac_hypergeometric
 run_hichip_loop_ora <- function(genes_list) {
   imap(genes_list, function(genes_i, nm) {
     as_ora_tbl(run_hallmark_ora(genes_i), group = nm)
@@ -118,8 +112,6 @@ run_hichip_loop_ora <- function(genes_list) {
 }
 
 # Overlap of nearby genes from MCF7 and ZR751 RB-up non-promoter peaks.
-# Original source:
-# analysis/answerToReviewer/reviewer3/02_RBnonprom_uppeaks_nearbygenes_MCF7ZR751overlap/ORA_genes_figure2a.Rmd
 run_overlap_gene_ora <- function(gene_sets) {
   overlap_genes <- intersect(gene_sets$MCF7, gene_sets$ZR751)
   as_ora_tbl(run_hallmark_ora(overlap_genes), group = "MCF7_ZR751_overlap")

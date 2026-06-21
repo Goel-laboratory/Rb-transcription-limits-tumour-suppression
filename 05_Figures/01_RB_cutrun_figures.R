@@ -1,8 +1,5 @@
 # RB CUT&RUN paper figures
 #
-# Cleaned from:
-#   analysis_paper/01_RB_cutrun/01_MAplots/01_RBcutrun_MAplots.Rmd
-#
 # This script reproduces the figure-generation logic from the paper Rmd using
 # saved DiffBind report objects. It does not rerun DiffBind.
 # Outputs are combined report objects and MA-style PDFs.

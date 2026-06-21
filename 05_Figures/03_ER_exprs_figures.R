@@ -1,8 +1,5 @@
 # ER-expression paper figures from RNA-seq/GSEA
 #
-# Cleaned from:
-#   analysis_paper/03_ER_exprs/01_RNASeq_GSEA_BubblePlot/MCF7M_Par_sgRB1_ZR_GSEA_bubbleplot.Rmd
-#
 # This script reruns the lightweight GSEA and figure assembly from saved DESeq2
 # result tables. It does not rerun alignment, featureCounts, or DESeq2.
 # Outputs are Hallmark GSEA tables and ER-response bubble plots.
